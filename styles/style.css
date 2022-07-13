@@ -1,0 +1,587 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@100&family=Rubik+Moonrocks&family=Smooch&family=Source+Code+Pro:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Source Code Pro";
+  color: #eee;
+  box-sizing: border-box;
+  line-height: 1.2;
+  background: #075349;
+
+}
+
+header {
+  position: absolute;
+  z-index: 50;
+}
+
+ul#menu {
+  display: flex;
+  list-style: none;
+
+  /* Alinha os itens verticalmente */
+  align-items: center;
+
+  /* Centraliza os itens */
+  justify-content: flex-end;
+
+  font-size: 1.2rem;
+}
+
+ul#menu li {
+  padding: 2.1rem;
+  color: rgb(255, 255, 255);
+}
+
+ul#menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Ajusta o item para quando eu passar o mouse sobre ele */
+ul#menu li:hover {
+  transform: scale(1.1);
+  transition: 0.01s ease-in-out;
+}
+
+nav {
+  background-color: rgb(67, 150, 129);
+  position: fixed;
+  width: 100%;
+}
+
+.formas-geometricas {
+  position: absolute;
+  top: -75%;
+  left: -90%;
+  z-index: -1;
+}
+
+.sobre {
+  cursor: pointer;
+}
+#titulo {
+  text-shadow: 5px 5px 5px#0000008f;
+}
+
+#titulo li {
+  list-style: none;
+}
+
+.bi {
+  font-size: 80px;
+  position: absolute;
+  left: 1%;
+  top: 2%;
+}
+
+.titulo {
+  font-size: 70px;
+  position: absolute;
+  left: 5.9rem;
+  top: 0.3rem;
+}
+
+.subtitulo {
+  position: absolute;
+  font-size: 20px;
+  left: 5.7rem;
+  top: 4rem;
+  display: flex;
+  width: 30rem;
+}
+
+.img_perfil img {
+  width: 450px;
+  position: absolute;
+  top: 34%;
+  left: 1.5%;
+}
+
+#phraseMotivational {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+}
+
+.sobre {
+  position: absolute;
+  top: 75%;
+  left: -30%;
+}
+
+.contato {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  width: 80%;
+}
+
+figure button {
+  font-size: 2rem;
+  text-shadow: 1px 2.2px 1px rgba(9, 54, 31, 0.623);
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 2.5px solid rgb(232, 238, 236);
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  background-color: #ffffff00;
+  user-select: none;
+  border-radius: 0.7rem;
+  z-index: 1;
+}
+
+figure button:after {
+  content: "";
+  background-color: #00c694c4;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 4px;
+  left: 4px;
+  transition: 0.2s;
+  border-radius: 0.7rem;
+}
+
+figure button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+.imagem {
+  position: absolute;
+  background-color: rgba(238, 238, 238, 0);
+  table-layout: unset;
+  top: -20%;
+  left: -68%;
+  z-index: 0;
+}
+
+/* .borda{
+
+  position: absolute;
+
+  top: 75%;
+  left: 1%;
+  width: 39rem;
+  height: 150px;
+  border-bottom: 10pc;
+  border: 1px solid rgb(247, 247, 247);
+  border-spacing: 200px;
+} */
+
+h2.meu-nome {
+  position: absolute;
+  top: 87%;
+  font-size: 80px;
+  left: 11.5%;
+  text-shadow: 1px 5px 1px rgba(2, 22, 12, 0.623);
+}
+p.motivation {
+  font-weight: 700;
+
+  font-size: 2rem;
+  width: 30rem;
+}
+
+p.author {
+  font-size: 0.9rem;
+  width: 31rem;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(238, 238, 238, 0);
+}
+
+.janela-sobre {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: rgba(238, 238, 238, 0.575);
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0rem 1rem 2rem 1rem rgba(20, 31, 27, 0.342);
+  z-index: 10;
+  color: rgb(33, 107, 117);
+  padding: 3.5%;
+}
+
+.fechar-janela-sobre {
+  position: absolute;
+  top: -0.5rem;
+  right: 0.6rem;
+  font-size: 4rem;
+  color: rgb(18, 73, 80);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.sobreposicao {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.158);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+div.card p {
+  text-align: justify;
+  line-height: 1.8rem;
+}
+
+section#projetos {
+  position: absolute;
+  margin-bottom: 10rem;
+  top: 110%;
+  left: 2.2%;
+  z-index: -2;
+}
+
+section#projetos h2 {
+  position: absolute;
+  padding-bottom: 5rem;
+  font-size: 3rem;
+  top: 7rem;
+  left: 1.3rem;
+  text-shadow: 1px 5px 1px rgba(9, 54, 31, 0.623);
+}
+
+section#cards {
+  position: absolute;
+  top: 15rem;
+  display: flex;
+  /* Ajusta o espaço entre cards */
+  justify-content: space-evenly;
+}
+
+section#projetos figure img#ico {
+  position: absolute;
+  top: 6.9rem;
+  left: -1rem;
+  z-index: -1;
+}
+
+.card {
+  border-radius: 2rem;
+  width: 16rem;
+  height: 24rem;
+  box-shadow: 5px 5px 5px 5px#00000020;
+  padding: 1rem;
+  margin: 0 3rem 0 1rem;
+  transition: transform 0.2s ease-in-out;
+  background-color: #004239;
+}
+.card h3 {
+  color: #00c694;
+  text-shadow: 2px 3px 2px rgba(9, 54, 31, 0.945);
+}
+
+.card img {
+  /* Ocupa 100% do espaço em que está */
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+.card p {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+section#videos {
+  position: absolute;
+  margin-bottom: 10rem;
+  top: 250%;
+  left: 2.2%;
+  z-index: -10;
+}
+
+section#videos h2 {
+  position: absolute;
+  padding-bottom: 5rem;
+  font-size: 3rem;
+  top: 7rem;
+  left: 2.8rem;
+  text-shadow: 1px 5px 1px rgba(9, 54, 31, 0.623);
+}
+
+.frame {
+  position: relative;
+  top: 14rem;
+}
+
+section#videos figure img#ico {
+  position: absolute;
+  top: 6.9rem;
+  left: -1rem;
+  z-index: -1;
+}
+
+.video {
+  transition: transform 0.1s ease-in-out;
+}
+.video:hover {
+  transform: scale(1.03);
+}
+
+section#skills {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 5%;
+  top: 390%;
+  left: 2.2%;
+  z-index: -10;
+}
+
+section#skills h2 {
+  position: relative;
+  padding-bottom: 5rem;
+  font-size: 3rem;
+  top: -1.9rem;
+  left: 3rem;
+  text-shadow: 1px 5px 1px rgba(9, 54, 31, 0.623);
+}
+section#skills figure img#ico {
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+  z-index: -1;
+}
+
+section#lay-skills figure {
+  position: absolute;
+  display: flex;
+  left: 5rem;
+  gap: 3rem;
+}
+
+section#lay-skills figure img {
+  border-radius: 15rem;
+  box-shadow: 1px 10px 1px #004239;
+  transition: transform 0.1s ease-in-out;
+  margin-bottom: 7rem;
+}
+
+section#lay-skills figure img:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  position: absolute;
+  top: 187rem;
+  padding-bottom: 1.4%;
+  padding-top: 1%;
+  background-color: #eee;
+  color: #004239;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+section#contato h2, #janelaProjetos h2 {
+  display: flex;
+  justify-content: center;
+}
+
+section#janela-vogal h2#vogal {
+  display: flex;
+  justify-content: center;
+}
+
+section#janela-vida h2#vida {
+  display: flex;
+  justify-content: center;
+}
+
+section#janela-numero h2#numero {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.janela-contato{
+  top: 50%;
+  left: 50%;
+}
+
+
+.janela-projetos{
+  top: 160%;
+  left: 50%;
+}
+
+
+
+.janela-contato,
+.janela-projetos {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: rgba(238, 238, 238, 0.767);
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0rem 1rem 2rem 1rem rgba(20, 31, 27, 0.342);
+  z-index: 10;
+  color: rgb(33, 107, 117);
+  padding: 2% 0 10% 0;
+}
+
+.fechar-janela-contato,
+.fechar-janela-projeto {
+  position: absolute;
+  top: -0.5rem;
+  right: 0.6rem;
+  font-size: 4rem;
+  color: rgb(18, 73, 80);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+
+.linkedin {
+  text-decoration: none;
+  color: #004239;
+  position: absolute;
+  top: 54%;
+  left: 34%;
+  font-size: 1.5rem;
+}
+
+.whatsapp {
+  text-decoration: none;
+  color: #004239;
+  position: absolute;
+  top: 54%;
+  left: 60%;
+  font-size: 1.5rem;
+}
+
+
+
+.bi-linkedin {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.bi-whatsapp {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 56%;
+}
+
+.iconEsquerda {
+  text-decoration: none;
+  color: #004239;
+  position: absolute;
+  top: 54%;
+  left: 34%;
+  font-size: 1.5rem;
+}
+
+.iconDireita {
+  text-decoration: none;
+  color: #004239;
+  position: absolute;
+  top: 54%;
+  left: 60%;
+  font-size: 1.5rem;
+}
+
+
+.bi-github {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.bi-pages {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 56%;
+}
+
+.botao-css {
+  display: absolute;
+  top: 55%;
+  margin-top: 1.5rem;
+  margin-left: 2.6rem;
+  font-size: 2rem;
+  text-shadow: 1px 2.2px 1px rgba(9, 54, 31, 0.623);
+  letter-spacing: 1px;
+  padding: 5px 8px 5px;
+  outline: 0;
+  border: 2.5px solid rgb(232, 238, 236);
+  color: #fff;
+  cursor: pointer;
+  background-color: #f1f1f16e;
+  user-select: none;
+  border-radius: 0.7rem;
+  z-index: 1;
+}
+
+.botao-2-css:hover {
+  display: absolute;
+  top: 55%;
+  margin-top: 1.5rem;
+  margin-left: 2.6rem;
+  font-size: 2rem;
+  text-shadow: 1px 2.2px 1px rgba(9, 54, 31, 0.623);
+  letter-spacing: 1px;
+  padding: 5px 8px 5px;
+  outline: 0;
+  border: 2.5px solid rgb(232, 238, 236);
+  color: #fff;
+  cursor: pointer;
+  background-color: #ffffff9c;
+  user-select: none;
+  border-radius: 0.7rem;
+  z-index: 82165;
+}
+
+btn-vida{
+  margin: 0;
+  padding: 0;
+}
